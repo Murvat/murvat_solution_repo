@@ -172,6 +172,96 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-2">Problem 2</h1>
+<h1 id="investigating-the-dynamics-of-a-forced-damped-pendulum">Investigating the Dynamics of a Forced Damped Pendulum</h1>
+<h2 id="motivation">Motivation</h2>
+<p>The forced damped pendulum is a captivating example of a physical system with intricate behavior resulting from the interplay of damping, restoring forces, and external driving forces. By introducing both damping and external periodic forcing, the system demonstrates a transition from simple harmonic motion to a rich spectrum of dynamics, including resonance, chaos, and quasiperiodic behavior. These phenomena serve as a foundation for understanding complex real-world systems, such as driven oscillators, climate systems, and mechanical structures under periodic stress.</p>
+<p>Adding forcing introduces new parameters, such as the amplitude and frequency of the external force, which significantly affect the pendulum's behavior. By systematically varying these parameters, a diverse class of solutions can be observed, including synchronized oscillations, chaotic motion, and resonance phenomena. These behaviors not only highlight fundamental physics principles but also provide insights into engineering applications such as energy harvesting, vibration isolation, and mechanical resonance.</p>
+<hr/>
+<h2 id="task">Task</h2>
+<h3 id="1-theoretical-foundation">1. Theoretical Foundation</h3>
+<ul>
+<li>Start with the differential equation governing the motion of a forced damped pendulum:</li>
+</ul>
+<p>[ \frac{d^2\theta}{dt^2} + \beta \frac{d\theta}{dt} + \omega_0^2 \sin\theta = A \cos(\omega t) ]</p>
+<ul>
+<li>Derive the approximate solutions for small-angle oscillations.</li>
+<li>Explore resonance conditions and their implications for the system's energy.</li>
+</ul>
+<h3 id="2-analysis-of-dynamics">2. Analysis of Dynamics</h3>
+<ul>
+<li>Investigate how the damping coefficient, driving amplitude, and driving frequency influence the motion of the pendulum.</li>
+<li>Examine the transition between regular and chaotic motion and their physical interpretations.</li>
+</ul>
+<h3 id="3-practical-applications">3. Practical Applications</h3>
+<ul>
+<li>Discuss real-world scenarios where the forced damped pendulum model applies, such as in energy harvesting devices, suspension bridges, and oscillating circuits.</li>
+</ul>
+<h3 id="4-implementation">4. Implementation</h3>
+<ul>
+<li>Create a computational model to simulate the motion of a forced damped pendulum.</li>
+<li>Visualize the behavior under various damping, driving force, and initial conditions.</li>
+<li>Plot phase diagrams and Poincaré sections to illustrate transitions to chaos.</li>
+</ul>
+<hr/>
+<h2 id="governing-equations-and-approximations">Governing Equations and Approximations</h2>
+<p>For small angles (<span class="arithmatex">\( \theta \approx \sin\theta \)</span>), the equation simplifies to:</p>
+<div class="arithmatex">\[ \frac{d^2\theta}{dt^2} + \beta \frac{d\theta}{dt} + \omega_0^2 \theta = A \cos(\omega t) \]</div>
+<p>The steady-state solution can be found using methods like the method of undetermined coefficients or Fourier analysis.</p>
+<hr/>
+<h2 id="python-implementation">Python Implementation</h2>
+<pre><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp
+
+def forced_damped_pendulum(t, y, beta, omega0, A, omega):
+    theta, omega_dot = y
+    return [omega_dot, -beta * omega_dot - omega0**2 * np.sin(theta) + A * np.cos(omega * t)]
+
+# Parameters
+beta = 0.5   # Damping coefficient
+omega0 = 1.5 # Natural frequency
+A = 1.2      # Forcing amplitude
+omega = 2.0  # Driving frequency
+y0 = [0.2, 0] # Initial conditions (angle, angular velocity)
+tspan = (0, 50)
+t_eval = np.linspace(*tspan, 1000)
+
+sol = solve_ivp(forced_damped_pendulum, tspan, y0, t_eval=t_eval, args=(beta, omega0, A, omega))
+
+# Plot results
+plt.figure(figsize=(8, 6))
+plt.plot(sol.t, sol.y[0], label='Theta (angle)')
+plt.xlabel('Time (s)')
+plt.ylabel('Angle (rad)')
+plt.title('Forced Damped Pendulum Motion')
+plt.legend()
+plt.grid()
+plt.show()
+</code></pre>
+<hr/>
+<h2 id="results-and-observations">Results and Observations</h2>
+<ul>
+<li>The motion depends critically on the damping and forcing parameters.</li>
+<li>Resonance occurs when <span class="arithmatex">\( \omega \approx \omega_0 \)</span>, leading to large oscillations.</li>
+<li>Chaos emerges for certain parameter ranges, leading to unpredictable behavior.</li>
+</ul>
+<hr/>
+<h2 id="advanced-analysis">Advanced Analysis</h2>
+<ul>
+<li><strong>Phase Portraits</strong>: Visualize trajectories in phase space.</li>
+<li><strong>Poincaré Sections</strong>: Analyze periodicity and chaos.</li>
+<li><strong>Bifurcation Diagrams</strong>: Examine how the system's stability changes with varying parameters.</li>
+</ul>
+<hr/>
+<h2 id="limitations-and-further-considerations">Limitations and Further Considerations</h2>
+<ul>
+<li>Nonlinear damping and external perturbations can be incorporated for realism.</li>
+<li>Higher-order numerical methods may improve accuracy in chaotic regimes.</li>
+<li>Real-world applications require considering material properties and external noise.</li>
+</ul>
+<hr/>
+<h2 id="conclusion">Conclusion</h2>
+<p>The forced damped pendulum serves as a gateway to understanding nonlinear dynamics, chaos, and resonance. By extending this study with computational simulations and advanced mathematical tools, deeper insights into real-world oscillatory systems can be achieved.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
