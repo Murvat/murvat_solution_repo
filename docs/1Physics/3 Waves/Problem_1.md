@@ -109,11 +109,11 @@ The simulation results reveal distinct interference patterns:
 Example images illustrating interference patterns:
 
 1. **Equilateral Triangle Interference**
-   ![Triangle Pattern](https://upload.wikimedia.org/wikipedia/commons/5/5a/Interference_of_two_waves.png)
+   ![Triangle Pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Interference_of_two_waves.svg/640px-Interference_of_two_waves.svg.png)
 2. **Square Wave Interference**
-   ![Square Pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Interference_pattern.svg/800px-Interference_pattern.svg.png)
+   ![Square Pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Wave_interference_hyperbolas.svg/640px-Wave_interference_hyperbolas.svg.png)
 3. **Pentagon Wave Interference**
-   ![Pentagon Pattern](https://upload.wikimedia.org/wikipedia/commons/2/2c/Interference_fringes.png)
+   ![Pentagon Pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Hyperbola_as_interference_fringe_-_origin.gif/640px-Hyperbola_as_interference_fringe_-_origin.gif)
 
 ---
 

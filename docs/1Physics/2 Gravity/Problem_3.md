@@ -74,7 +74,7 @@ _Transition to constant velocity (~90 m/s for skydiver posture)_
 
 ### 6. Guided vs Ballistic Descent
 
-![Control surfaces](https://www.researchgate.net/publication/334650187/figure/fig5/AS:781437319036931@1563550422676/Controlled-vs-free-fall-trajectories.png)  
+![Control surfaces](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Fall_of_two_bodies.gif/640px-Fall_of_two_bodies.gif)  
 _Parafoil (blue) vs uncontrolled (red) trajectories_
 
 ### 7. Reentry Physics
