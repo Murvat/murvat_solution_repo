@@ -210,6 +210,37 @@
 <li>Visualize the resulting paths.</li>
 </ul>
 <hr/>
+<h2 id="examples">Examples</h2>
+<h3 id="1-ideal-parabolic-trajectory">1. Ideal Parabolic Trajectory</h3>
+<p><img alt="Free-fall parabola" src="https://www.physicsclassroom.com/Class/1DKin/U1L5a2.gif"/><br/>
+<em>Perfect parabolic path in vacuum (no air resistance)</em></p>
+<h3 id="2-coriolis-deflection">2. Coriolis Deflection</h3>
+<p><img alt="Coriolis effect" src="https://www.researchgate.net/publication/334361454/figure/fig3/AS:778395919654914@1562794678858/Coriolis-deflection-of-a-freely-falling-body.png"/><br/>
+<em>Eastward drift due to Earth's rotation (~1.4 cm per 100m drop at equator)</em></p>
+<h3 id="3-high-altitude-release">3. High-Altitude Release</h3>
+<p><img alt="Kármán line transition" src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2013/03/high_altitude_release/12564076-1-eng-GB/High_altitude_release.jpg"/><br/>
+<em>Transition from parabolic to elliptical motion above 100km</em></p>
+<h3 id="4-iss-payload-release">4. ISS Payload Release</h3>
+<p><img alt="Orbital ejection" src="https://www.nasa.gov/wp-content/uploads/2021/11/iss-payload-release-simulation.jpg"/><br/>
+<em>Hyperbolic relative trajectory when released from 7.66 km/s orbital velocity</em></p>
+<h3 id="5-terminal-velocity">5. Terminal Velocity</h3>
+<p><img alt="Air resistance effects" src="https://www.physicsclassroom.com/Class/newtlaws/u2l3e5.gif"/><br/>
+<em>Transition to constant velocity (~90 m/s for skydiver posture)</em></p>
+<h3 id="6-guided-vs-ballistic-descent">6. Guided vs Ballistic Descent</h3>
+<p><img alt="Control surfaces" src="https://www.researchgate.net/publication/334650187/figure/fig5/AS:781437319036931@1563550422676/Controlled-vs-free-fall-trajectories.png"/><br/>
+<em>Parafoil (blue) vs uncontrolled (red) trajectories</em></p>
+<h3 id="7-reentry-physics">7. Reentry Physics</h3>
+<p><img alt="Bow shock formation" src="https://www.nasa.gov/wp-content/uploads/2023/04/reentry-plasma-visualization.jpg"/><br/>
+<em>Plasma sheath formation during high-speed atmospheric entry</em></p>
+<hr/>
+<h3 id="key-equations">Key Equations</h3>
+<p><strong>Free-fall time:</strong><br/>
+<code>t = sqrt(2h/g)</code><br/>
+<strong>Coriolis deflection:</strong><br/>
+<code>d = (1/3)ωgt³cosλ</code><br/>
+<strong>Terminal velocity:</strong><br/>
+<code>vₜ = sqrt(2mg/ρACₚ)</code></p>
+<hr/>
 <h2 id="python-implementation">Python Implementation</h2>
 <pre><code class="language-python">import numpy as np
 import matplotlib.pyplot as plt
