@@ -78,6 +78,35 @@ projectile_range(v0=20)
 
 ---
 
+## Examples
+
+## Examples
+
+### 1. Basic Projectile Trajectories
+
+![Projectile at different angles](https://www.sciencefacts.net/wp-content/uploads/2022/06/Projectile-Motion-Range.jpg)
+_Comparison of trajectories at 30°, 45°, and 60° launch angles_
+
+### 2. Range vs Angle Graph
+
+![Range vs angle plot](https://phys.libretexts.org/@api/deki/files/5246/clipboard_eeb6b6e5a4e3c1b7a5c0d6b5f5e8e8b1.png)
+_Theoretical range as function of launch angle (peaks at 45°)_
+
+### 3. Effect of Air Resistance
+
+![With and without air drag](https://www.researchgate.net/publication/344416420/figure/fig2/AS:940551366553601@1601470306164/Trajectories-of-a-projectile-in-a-vacuum-red-and-in-air-blue.png)
+_Red: Ideal vacuum trajectory; Blue: Real-world trajectory with air resistance_
+
+### 4. Projectile Equations Diagram
+
+![Key equations](https://www.physicsclassroom.com/Class/vectors/u3l2a2.gif)
+_Visual representation of projectile motion equations_
+
+### 5. Uneven Terrain Example
+
+![Launch from cliff](https://www.physicsclassroom.com/Images/Class/vectors/u3l2a3.gif)
+_Projectile launched from elevated position showing asymmetric range_
+
 ## Results and Observations
 
 - The range follows a symmetric pattern, peaking at \(45^\circ\).
