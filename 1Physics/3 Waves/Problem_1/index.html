@@ -172,6 +172,111 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
+<h1 id="waves-interference-patterns-on-a-water-surface"><strong>Waves: Interference Patterns on a Water Surface</strong></h1>
+<h3 id="motivation"><strong>Motivation</strong></h3>
+<p>Interference occurs when waves from different sources overlap, creating new patterns. On a water surface, this can be easily observed when ripples from different points meet, forming distinctive interference patterns. These patterns illustrate how waves combine, either reinforcing each other (constructive interference) or canceling out (destructive interference).</p>
+<p>Studying these patterns provides insights into wave behavior, including phase relationships and the effects of multiple sources. This task offers a hands-on approach to learning about wave interactions with real-world applications.</p>
+<hr/>
+<h2 id="task"><strong>Task</strong></h2>
+<p>We analyze the interference patterns formed on a water surface due to the superposition of waves emitted from point sources positioned at the vertices of a regular polygon.</p>
+<h3 id="mathematical-model"><strong>Mathematical Model</strong></h3>
+<p>A circular wave originating from a point source at <span class="arithmatex">\( (x_i, y_i) \)</span> follows the equation:</p>
+<div class="arithmatex">\[
+u_i(x, y, t) = A \cos(k r_i - \omega t + \phi_0)
+\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\( u_i(x, y, t) \)</span> is the displacement of the water surface at point <span class="arithmatex">\( (x, y) \)</span> and time <span class="arithmatex">\( t \)</span>,</li>
+<li><span class="arithmatex">\( A \)</span> is the amplitude of the wave,</li>
+<li><span class="arithmatex">\( k = \frac{2\pi}{\lambda} \)</span> is the wave number,</li>
+<li><span class="arithmatex">\( \omega = 2\pi f \)</span> is the angular frequency,</li>
+<li><span class="arithmatex">\( r_i = \sqrt{(x - x_i)^2 + (y - y_i)^2} \)</span> is the distance from the source to the point <span class="arithmatex">\( (x, y) \)</span>,</li>
+<li><span class="arithmatex">\( \phi_0 \)</span> is the initial phase.</li>
+</ul>
+<p>The total displacement due to multiple sources (placed at polygon vertices) is:</p>
+<div class="arithmatex">\[
+U(x, y, t) = \sum\_{i=1}^{N} u_i(x, y, t)
+\]</div>
+<p>where <span class="arithmatex">\( N \)</span> is the number of wave sources (vertices of the polygon).</p>
+<hr/>
+<h2 id="steps-to-follow"><strong>Steps to Follow</strong></h2>
+<ol>
+<li><strong>Choose a Regular Polygon</strong>: Select a polygon (triangle, square, pentagon, etc.).</li>
+<li><strong>Position the Sources</strong>: Place point wave sources at the polygon's vertices.</li>
+<li><strong>Define the Wave Equations</strong>: Use the mathematical model above for each source.</li>
+<li><strong>Superposition of Waves</strong>: Sum the wave displacements at each grid point.</li>
+<li><strong>Visualize Interference Patterns</strong>: Plot the results graphically.</li>
+</ol>
+<hr/>
+<h2 id="python-implementation"><strong>Python Implementation</strong></h2>
+<p>The following Python script simulates interference patterns for waves from sources positioned at the vertices of a regular polygon.</p>
+<pre><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+
+# Parameters
+A = 1           # Amplitude
+wavelength = 2  # Wavelength
+k = 2 * np.pi / wavelength  # Wave number
+omega = 2 * np.pi  # Angular frequency
+phi_0 = 0       # Initial phase
+time = 0        # Time snapshot
+
+# Define polygon vertices
+N = 5  # Number of sources (e.g., pentagon)
+radius = 5
+angles = np.linspace(0, 2 * np.pi, N, endpoint=False)
+source_positions = [(radius * np.cos(a), radius * np.sin(a)) for a in angles]
+
+# Grid setup
+x = np.linspace(-10, 10, 400)
+y = np.linspace(-10, 10, 400)
+X, Y = np.meshgrid(x, y)
+
+# Compute superposition of waves
+U = np.zeros_like(X)
+for (x_i, y_i) in source_positions:
+    r = np.sqrt((X - x_i)**2 + (Y - y_i)**2)
+    U += A * np.cos(k * r - omega * time + phi_0)
+
+# Plot interference pattern
+plt.figure(figsize=(8, 6))
+plt.contourf(X, Y, U, levels=100, cmap='RdBu_r')
+plt.colorbar(label='Wave Amplitude')
+plt.scatter(*zip(*source_positions), color='black', marker='o', label='Wave Sources')
+plt.legend()
+plt.title("Interference Pattern of Waves from Regular Polygon Sources")
+plt.xlabel("X Position")
+plt.ylabel("Y Position")
+plt.show()
+</code></pre>
+<hr/>
+<h2 id="results-and-observations"><strong>Results and Observations</strong></h2>
+<p>The simulation results reveal distinct interference patterns:</p>
+<ul>
+<li><strong>Constructive Interference</strong>: Bright regions where waves amplify each other.</li>
+<li><strong>Destructive Interference</strong>: Dark regions where waves cancel out.</li>
+<li><strong>Symmetric Patterns</strong>: The symmetry of the polygon affects the overall pattern.</li>
+</ul>
+<p>Example images illustrating interference patterns:</p>
+<ol>
+<li><strong>Equilateral Triangle Interference</strong>
+<img alt="Triangle Pattern" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Interference_of_two_waves.png"/></li>
+<li><strong>Square Wave Interference</strong>
+<img alt="Square Pattern" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Interference_pattern.svg/800px-Interference_pattern.svg.png"/></li>
+<li><strong>Pentagon Wave Interference</strong>
+<img alt="Pentagon Pattern" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Interference_fringes.png"/></li>
+</ol>
+<hr/>
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+<p>This study demonstrates how multiple wave sources interact to create complex interference patterns. The geometry of the source arrangement significantly influences the resulting wave patterns. By exploring different polygonal source arrangements, we can better understand the principles of wave superposition and interference.</p>
+<p>This approach has real-world applications in optics, acoustics, and wave physics, where similar interference effects occur in sound waves, electromagnetic waves, and quantum wavefunctions.</p>
+<hr/>
+<h2 id="further-exploration"><strong>Further Exploration</strong></h2>
+<ul>
+<li>Investigate how phase differences between sources alter the interference pattern.</li>
+<li>Explore the effect of different wavelengths on pattern formation.</li>
+<li>Extend the model to simulate 3D wave interference.</li>
+</ul>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
