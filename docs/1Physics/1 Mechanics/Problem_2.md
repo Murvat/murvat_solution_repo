@@ -38,6 +38,43 @@ Adding forcing introduces new parameters, such as the amplitude and frequency of
 
 ---
 
+## Examples
+
+### 1. Phase Portrait of Damped Pendulum
+
+![Phase space diagram](https://www.researchgate.net/publication/334361454/figure/fig1/AS:778395919654912@1562794678856/Phase-portrait-of-a-damped-pendulum.png)
+_Trajectories in (θ, ω) phase space showing attractor behavior_
+
+### 2. Resonance Response Curve
+
+![Resonance curve](https://phys.libretexts.org/@api/deki/files/3453/oscillations-resonance.png)
+_Amplitude vs. driving frequency showing resonance peak_
+
+### 3. Chaotic Behavior
+
+![Chaotic pendulum](https://www.sciencedirect.com/science/article/pii/S1007570416300281/gr1.jpg)
+_Strange attractor in parameter space for chaotic regime_
+
+### 4. Time Series Solutions
+
+![Time evolution](https://www.researchgate.net/publication/344755104/figure/fig3/AS:944632593416192@1602760441916/Time-series-of-a-forced-damped-pendulum.png)
+_Displacement θ(t) showing transient and steady-state behavior_
+
+### 5. Bifurcation Diagram
+
+![Bifurcation plot](https://www.physics.umd.edu/courses/Phys420/Osborne/ReportImages/image004.gif)
+_Transition to chaos as driving force increases_
+
+### 6. Poincaré Section
+
+![Poincare map](https://demonstrations.wolfram.com/PoincareSectionsForTheDampedDrivenPendulum/HTMLImages/index.en/popup_3.jpg)
+_Stroboscopic sampling revealing underlying structure_
+
+### 7. Experimental Setup
+
+![Physical pendulum](https://www.lehman.edu/faculty/anchordoqui/lab_forced_pendulum.jpg)
+_Typical laboratory apparatus for forced pendulum studies_
+
 ## Governing Equations and Approximations
 
 For small angles (\( \theta \approx \sin\theta \)), the equation simplifies to:

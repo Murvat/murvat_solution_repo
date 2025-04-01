@@ -30,6 +30,43 @@ The concept of escape velocity is crucial for understanding the conditions requi
 - The mass \( M \) of the celestial body significantly affects escape velocity.
 - The radius \( r \) of the celestial body determines the strength of gravity at its surface.
 
+## Examples
+
+### 1. Solar System Escape Velocities
+
+![Solar System Escape Velocities](https://www.researchgate.net/publication/334723909/figure/tbl1/AS:781465546756096@1563555561214/Escape-velocities-for-solar-system-bodies.png)  
+_Comparative escape velocities from planetary surfaces (Earth: 11.2 km/s, Moon: 2.4 km/s)_
+
+### 2. Earth's Gravity Well
+
+![Gravity Well Diagram](https://www.physicsclassroom.com/Class/circles/u3l4b1.gif)  
+_Visualization of escape velocity as "climbing out" of a gravity well_
+
+### 3. Cosmic Velocity Chart
+
+![Cosmic Velocities](https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2013/03/cosmic_velocities/12564074-1-eng-GB/Cosmic_velocities.jpg)  
+_The four cosmic velocities (V₁-V₄) for Earth_
+
+### 4. Black Hole Event Horizon
+
+![Black Hole Escape](https://www.nasa.gov/wp-content/uploads/2023/04/bh-accretion-disk-artist-concept-1.jpg)  
+_Where escape velocity exceeds speed of light (Vₑₛᴄ > c)_
+
+### 5. Rocket Launch Trajectories
+
+![Launch Profiles](https://www.nasa.gov/wp-content/uploads/2021/10/sls-infographic-1.jpg)  
+_How different velocities achieve orbit (V₁) vs. escape (V₂)_
+
+### 6. Exoplanet Escape Calculations
+
+![Exoplanet Atmosphere Loss](https://exoplanets.nasa.gov/system/resources/detail_files/314_exoplanet-atmosphere-escape.jpg)  
+_Atmospheric escape when Vₑₛᴄ < thermal velocity_
+
+### 7. Relativistic Escape
+
+![Relativistic Effects](https://www.researchgate.net/publication/334650187/figure/fig2/AS:781437319036929@1563550422674/Relativistic-corrections-to-escape-velocity.png)  
+_Einstein-adapted escape velocity at extreme gravity_
+
 ### 3. Real-World Applications
 
 - **Launching Satellites**: Achieving the first cosmic velocity allows satellites to remain in orbit.

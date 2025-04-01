@@ -47,6 +47,43 @@ The relationship between the square of the orbital period and the cube of the or
 
 ---
 
+## Examples
+
+### 1. Kepler's Third Law Visualization
+
+![Kepler's Law](https://www.physicsclassroom.com/Class/circles/u3l4a2.gif)
+_Graphical representation of T² ∝ r³ relationship_
+
+### 2. Solar System Orbits
+
+![Planetary orbits](https://scijinks.gov/wp-content/uploads/2023/08/orbits.png)
+_Relative orbital radii and periods of planets_
+
+### 3. Binary Star System
+
+![Binary stars](https://www.researchgate.net/publication/334650187/figure/fig1/AS:781437319036928@1563550422668/Orbits-in-a-binary-star-system.png)
+_Mutual orbit with common center of mass_
+
+### 4. Geostationary Orbit
+
+![Geo orbit](https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2013/03/geostationary_orbit/12564070-1-eng-GB/Geostationary_orbit.jpg)
+_Special case where T = 24 hours (r ≈ 42,164 km)_
+
+### 5. Moon's Orbit
+
+![Lunar orbit](https://moon.nasa.gov/system/resources/detail_files/614_moon-phases-2021.jpg)
+_T = 27.3 days, r ≈ 384,400 km_
+
+### 6. Exoplanet Transit Data
+
+![Light curve](https://exoplanets.nasa.gov/system/resources/detail_files/313_transit-graph-1.jpg)
+_Period detection from observed transits_
+
+### 7. Hohmann Transfer Orbit
+
+![Transfer orbit](https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2013/03/hohmann_transfer_orbit/12564072-1-eng-GB/Hohmann_transfer_orbit.jpg)
+_Orbital period matching for efficient transfers_
+
 ## Python Implementation
 
 ```python

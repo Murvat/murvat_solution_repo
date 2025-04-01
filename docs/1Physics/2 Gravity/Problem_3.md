@@ -45,6 +45,56 @@ When an object is released from a moving rocket near Earth, its trajectory depen
 
 ---
 
+## Examples
+
+### 1. Ideal Parabolic Trajectory
+
+![Free-fall parabola](https://www.physicsclassroom.com/Class/1DKin/U1L5a2.gif)  
+_Perfect parabolic path in vacuum (no air resistance)_
+
+### 2. Coriolis Deflection
+
+![Coriolis effect](https://www.researchgate.net/publication/334361454/figure/fig3/AS:778395919654914@1562794678858/Coriolis-deflection-of-a-freely-falling-body.png)  
+_Eastward drift due to Earth's rotation (~1.4 cm per 100m drop at equator)_
+
+### 3. High-Altitude Release
+
+![Kármán line transition](https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2013/03/high_altitude_release/12564076-1-eng-GB/High_altitude_release.jpg)  
+_Transition from parabolic to elliptical motion above 100km_
+
+### 4. ISS Payload Release
+
+![Orbital ejection](https://www.nasa.gov/wp-content/uploads/2021/11/iss-payload-release-simulation.jpg)  
+_Hyperbolic relative trajectory when released from 7.66 km/s orbital velocity_
+
+### 5. Terminal Velocity
+
+![Air resistance effects](https://www.physicsclassroom.com/Class/newtlaws/u2l3e5.gif)  
+_Transition to constant velocity (~90 m/s for skydiver posture)_
+
+### 6. Guided vs Ballistic Descent
+
+![Control surfaces](https://www.researchgate.net/publication/334650187/figure/fig5/AS:781437319036931@1563550422676/Controlled-vs-free-fall-trajectories.png)  
+_Parafoil (blue) vs uncontrolled (red) trajectories_
+
+### 7. Reentry Physics
+
+![Bow shock formation](https://www.nasa.gov/wp-content/uploads/2023/04/reentry-plasma-visualization.jpg)  
+_Plasma sheath formation during high-speed atmospheric entry_
+
+---
+
+### Key Equations
+
+**Free-fall time:**  
+`t = sqrt(2h/g)`  
+**Coriolis deflection:**  
+`d = (1/3)ωgt³cosλ`  
+**Terminal velocity:**  
+`vₜ = sqrt(2mg/ρACₚ)`
+
+---
+
 ## Python Implementation
 
 ```python
