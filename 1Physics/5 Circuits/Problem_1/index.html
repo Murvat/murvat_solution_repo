@@ -172,6 +172,42 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
+<h1 id="equivalent-resistance-using-graph-theory">🔌 Equivalent Resistance Using Graph Theory</h1>
+<h2 id="motivation">🎯 Motivation</h2>
+<p>Traditional methods for calculating equivalent resistance—applying series and parallel rules—become impractical for large or complex circuits. <strong>Graph theory</strong> provides a powerful and flexible alternative. In this method:</p>
+<ul>
+<li><strong>Nodes</strong> represent junctions in the circuit.</li>
+<li><strong>Edges</strong> represent resistors with weights corresponding to resistance values.</li>
+</ul>
+<p>By applying graph simplification techniques, we can reduce even complex resistor networks into a single equivalent resistance. This method is particularly useful for:</p>
+<ul>
+<li>Circuit analysis software</li>
+<li>Complex network design</li>
+<li>Automating circuit reduction</li>
+</ul>
+<hr/>
+<h2 id="option-1-algorithm-description">🧠 Option 1: Algorithm Description</h2>
+<h3 id="core-idea">🔁 Core Idea</h3>
+<p>We use graph reduction techniques:</p>
+<ol>
+<li><strong>Series Reduction:</strong> If two resistors are connected end-to-end with a common node and no other branches, combine them into one.</li>
+<li><strong>Parallel Reduction:</strong> If two or more resistors connect the same two nodes, combine them using parallel rules.</li>
+</ol>
+<hr/>
+<h3 id="pseudocode">📋 Pseudocode</h3>
+<pre><code class="language-plaintext">function simplify_graph(G):
+    while changes can be made:
+        for each node in G:
+            if node has degree 2:
+                check if connected resistors are in series:
+                    combine and replace with equivalent resistor
+            for each pair of nodes (u, v):
+                if multiple edges (resistors) exist between u and v:
+                    replace with one equivalent resistor in parallel
+
+    return total resistance between source and target nodes
+
+</code></pre>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
