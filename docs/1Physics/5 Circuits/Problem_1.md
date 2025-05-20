@@ -3,7 +3,7 @@
 # 🔌 Equivalent Resistance Using Graph Theory
 
 ## 🎯 Motivation
-
+ksmfsfdmasd
 Traditional methods for calculating equivalent resistance—applying series and parallel rules—become impractical for large or complex circuits. **Graph theory** provides a powerful and flexible alternative. In this method:
 
 - **Nodes** represent junctions in the circuit.
