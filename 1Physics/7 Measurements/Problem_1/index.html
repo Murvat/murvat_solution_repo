@@ -76,15 +76,15 @@
 </li>
 <li class="toctree-l1"><a class="reference internal">5 Circuits</a>
 <ul>
-<li class="toctree-l2"><a class="reference internal" href="../../5%20Circuits/Problem_1/">Problem 1</a>
+<li class="toctree-l2"><a class="reference internal" href="../../5%20Circuits/Problem_1/">🔌 Problem 1: Equivalent Resistance Using Graph Theory</a>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal">6 Statistics</a>
 <ul>
-<li class="toctree-l2"><a class="reference internal" href="../../6%20Statistics/Problem_1/">Problem 1</a>
+<li class="toctree-l2"><a class="reference internal" href="../../6%20Statistics/Problem_1/">📊 Problem 1: Exploring the Central Limit Theorem (CLT) Through Simulations</a>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../6%20Statistics/Problem_2/">Problem 2</a>
+<li class="toctree-l2"><a class="reference internal" href="../../6%20Statistics/Problem_2/">Problem 2: Estimating π Using Monte Carlo Methods</a>
 </li>
 </ul>
 </li>
@@ -174,29 +174,56 @@
 <h1 id="problem-1">Problem 1</h1>
 <h1 id="measuring-earths-gravitational-acceleration-with-a-pendulum">🧪 Measuring Earth's Gravitational Acceleration with a Pendulum</h1>
 <h2 id="motivation">🎯 Motivation</h2>
-<p>The acceleration due to gravity \( g \) is a fundamental constant crucial in physics and engineering. This experiment explores a classic and accessible method for determining \( g \) using a simple pendulum and emphasizes experimental accuracy and uncertainty analysis.</p>
+<p>The acceleration due to gravity <span class="arithmatex">\(g\)</span> is a foundational physical constant central to fields such as mechanics, civil engineering, aerospace design, and physics education. One of the most accessible and elegant ways to estimate <span class="arithmatex">\(g\)</span> is using the simple pendulum — a system studied since the era of Galileo.</p>
+<p>This experiment demonstrates how basic tools and data analysis can be used to produce an accurate estimate of <span class="arithmatex">\(g\)</span>, while introducing essential scientific skills: measurement precision, data handling, and uncertainty quantification.</p>
+<p><img alt="Pendulum Experiment" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Pendulum_animation.gif/480px-Pendulum_animation.gif"/></p>
 <hr/>
-<h2 id="materials">🔧 Materials</h2>
-<ul>
-<li>String (1–1.5 meters)</li>
-<li>Small weight (e.g., keychain, coin bag)</li>
-<li>Stopwatch or smartphone timer</li>
-<li>Ruler or measuring tape (resolution: 0.01 m recommended)</li>
-</ul>
+<h2 id="materials-required">🔧 Materials Required</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String (1–1.5 meters)</td>
+<td>Acts as the pendulum arm</td>
+</tr>
+<tr>
+<td>Small mass/weight</td>
+<td>Creates the pendulum bob</td>
+</tr>
+<tr>
+<td>Stopwatch/smartphone</td>
+<td>Measures time intervals</td>
+</tr>
+<tr>
+<td>Ruler or measuring tape</td>
+<td>Measures the length <span class="arithmatex">\(L\)</span></td>
+</tr>
+<tr>
+<td>Clamp/stand (optional)</td>
+<td>Provides stable support for suspension</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔍 Note: Ensure that the environment is free of strong air currents and the mass swings freely without obstruction.</p>
+</blockquote>
 <hr/>
-<h2 id="setup">⚙️ Setup</h2>
+<h2 id="experimental-setup">⚙️ Experimental Setup</h2>
 <ol>
-<li>Suspend the weight from the string attached to a stable point.</li>
-<li>Measure the pendulum length \( L \) from the suspension point to the center of mass of the weight.</li>
-<li>Record the measurement tool resolution (e.g., 0.01 m → uncertainty \( u_L = 0.005 \) m).</li>
+<li><strong>Assembly</strong>: Tie one end of the string to a fixed support and attach the mass to the other end.</li>
+<li><strong>Length Measurement</strong>: Measure the length <span class="arithmatex">\(L\)</span> from the suspension point to the mass center. Use a ruler with millimeter resolution if possible.</li>
+<li><strong>Displacement</strong>: Gently pull the pendulum back by <strong>less than 15°</strong> from the vertical to maintain the small-angle approximation.</li>
+<li><strong>Measurement Uncertainty</strong>: If using a ruler with 1 cm divisions, uncertainty in <span class="arithmatex">\(L\)</span> is <span class="arithmatex">\(u_L = 0.005\)</span> m.</li>
 </ol>
+<p><img alt="Simple Pendulum Setup" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Pendulum.svg/800px-Pendulum.svg.png"/></p>
 <hr/>
 <h2 id="data-collection">📊 Data Collection</h2>
-<ul>
-<li>Displace the pendulum by less than 15°.</li>
-<li>Measure the time for 10 full oscillations, 10 times.</li>
-<li>Record the data:</li>
-</ul>
+<p>Conduct <strong>10 trials</strong>, each measuring the time for <strong>10 full oscillations</strong>. Record your observations in a table:</p>
 <table>
 <thead>
 <tr>
@@ -247,73 +274,129 @@
 </tr>
 </tbody>
 </table>
-<h3 id="calculated-averages">🔍 Calculated Averages</h3>
+<hr/>
+<h2 id="calculated-averages-and-uncertainties">🔎 Calculated Averages and Uncertainties</h2>
+<h3 id="period-calculation">🧮 Period Calculation</h3>
 <ul>
-<li>Mean time \( \overline{t}_{10} = 20.312 \) s</li>
-<li>Period \( T = \frac{\overline{t}_{10}}{10} = 2.0312 \) s</li>
-<li>Standard deviation \( \sigma = 0.020 \) s</li>
-<li>Uncertainty in mean time \( u_T = \frac{\sigma}{\sqrt{10} \cdot 10} = 0.00063 \) s</li>
+<li>Mean time for 10 oscillations: <span class="arithmatex">\(\overline{t}_{10} = 20.312\)</span> s</li>
+<li>Period <span class="arithmatex">\(T = \frac{\overline{t}_{10}}{10} = 2.0312\)</span> s</li>
+<li>Standard deviation: <span class="arithmatex">\(\sigma = 0.020\)</span> s</li>
+<li>Uncertainty in mean: <span class="arithmatex">\(u_T = \frac{\sigma}{\sqrt{10} \cdot 10} = 0.00063\)</span> s</li>
 </ul>
 <hr/>
-<h2 id="calculations">🧮 Calculations</h2>
-<h3 id="1-compute-g-from">1️⃣ Compute \( g \) from:</h3>
-<p>\[
-g = \frac{4\pi^2 L}{T^2}
-\]</p>
+<h2 id="theoretical-basis-and-calculations">🧠 Theoretical Basis and Calculations</h2>
+<h3 id="1-formula-for-gravity">1️⃣ Formula for Gravity</h3>
+<div class="arithmatex">\[
+  g = \frac{4\pi^2 L}{T^2}
+\]</div>
 <p>Given:</p>
 <ul>
-<li>\( L = 1.000 \pm 0.005 \) m</li>
-<li>\( T = 2.0312 \pm 0.00063 \) s</li>
+<li><span class="arithmatex">\(L = 1.000 \pm 0.005\)</span> m</li>
+<li><span class="arithmatex">\(T = 2.0312 \pm 0.00063\)</span> s</li>
 </ul>
-<p>\[
-g = \frac{4\pi^2 \cdot 1.000}{(2.0312)^2} \approx 9.55 \ \text{m/s}^2
-\]</p>
-<h3 id="2-uncertainty-propagation">2️⃣ Uncertainty Propagation</h3>
-<p>\[
-\frac{u_g}{g} = \sqrt{\left(\frac{u_L}{L}\right)^2 + \left(2\frac{u_T}{T}\right)^2}
-\]</p>
-<p>\[
+<p>Substitute:</p>
+<div class="arithmatex">\[
+  g = \frac{4\pi^2 \cdot 1.000}{(2.0312)^2} \approx 9.55 \ \text{m/s}^2
+\]</div>
+<h3 id="2-propagating-uncertainty">2️⃣ Propagating Uncertainty</h3>
+<div class="arithmatex">\[
+\frac{u_g}{g} = \sqrt{\left(\frac{u_L}{L}\right)^2 + \left(2\cdot\frac{u_T}{T}\right)^2}
+\]</div>
+<div class="arithmatex">\[
 \frac{u_g}{g} = \sqrt{\left(\frac{0.005}{1.000}\right)^2 + \left(2\cdot\frac{0.00063}{2.0312}\right)^2} \approx 0.00515
-\]</p>
-<p>\[
-u_g = 9.55 \cdot 0.00515 \approx 0.049 \ \text{m/s}^2
-\]</p>
+\]</div>
+<div class="arithmatex">\[
+  u_g = 9.55 \cdot 0.00515 \approx 0.049 \ \text{m/s}^2
+\]</div>
 <h3 id="final-result">✅ Final Result</h3>
-<p>\[
-g = 9.55 \pm 0.05 \ \text{m/s}^2
-\]</p>
+<div class="arithmatex">\[
+  \boxed{g = 9.55 \pm 0.05 \ \text{m/s}^2}
+\]</div>
 <hr/>
-<h2 id="analysis">📌 Analysis</h2>
-<h3 id="comparison-to-standard-value">🔍 Comparison to Standard Value</h3>
+<h2 id="results-interpretation">📌 Results Interpretation</h2>
+<h3 id="comparison-to-standard-value">📉 Comparison to Standard Value</h3>
 <ul>
-<li>Accepted value of \( g \approx 9.81 \ \text{m/s}^2 \)</li>
-<li>Relative error: \( \frac{|9.55 - 9.81|}{9.81} \approx 2.65\% \)</li>
+<li>Standard gravitational acceleration: <span class="arithmatex">\(g = 9.81 \ \text{m/s}^2\)</span></li>
+<li>Absolute error: <span class="arithmatex">\(|9.55 - 9.81| = 0.26 \ \text{m/s}^2\)</span></li>
+<li>Relative error: <span class="arithmatex">\(\frac{0.26}{9.81} \approx 2.65\%\)</span></li>
 </ul>
 <h3 id="sources-of-uncertainty">⚠️ Sources of Uncertainty</h3>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Length measurement</td>
+<td>Inexact center-of-mass estimation and parallax error</td>
+</tr>
+<tr>
+<td>Timing error</td>
+<td>Manual stopwatch handling introduces latency</td>
+</tr>
+<tr>
+<td>Air resistance</td>
+<td>Can slightly dampen the motion and alter period</td>
+</tr>
+<tr>
+<td>Amplitude assumption</td>
+<td>Over 15° leads to nonlinear behavior</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🧠 Improving reliability: Use light gates or motion sensors for precise time tracking.</p>
+</blockquote>
+<hr/>
+<h2 id="visualization-examples">📈 Visualization Examples</h2>
+<h3 id="time-vs-trial-plot">📍 Time vs. Trial Plot</h3>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+
+trials = list(range(1, 11))
+times = [20.31, 20.29, 20.33, 20.28, 20.32, 20.35, 20.30, 20.34, 20.29, 20.31]
+
+plt.figure(figsize=(8, 4))
+plt.plot(trials, times, marker='o', linestyle='-', color='navy')
+plt.axhline(sum(times)/len(times), color='red', linestyle='--', label='Mean Time')
+plt.title("Pendulum Oscillation Time per Trial")
+plt.xlabel("Trial")
+plt.ylabel("Time for 10 Oscillations (s)")
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+</code></pre>
+<hr/>
+<h2 id="optional-extensions">🧰 Optional Extensions</h2>
 <ul>
-<li><strong>Length Measurement:</strong> Accuracy limited by visual alignment and ruler resolution.</li>
-<li><strong>Timing Variability:</strong> Human reaction time affects stopwatch results.</li>
-<li><strong>Air Resistance and Friction:</strong> Minor but can accumulate over time.</li>
-<li><strong>Amplitude Assumption:</strong> Small angle approximation may introduce error at larger displacements.</li>
+<li>Try different lengths <span class="arithmatex">\(L\)</span> and observe how <span class="arithmatex">\(T\)</span> changes.</li>
+<li>Plot <span class="arithmatex">\(T^2\)</span> vs <span class="arithmatex">\(L\)</span>; the slope will be <span class="arithmatex">\(\frac{4\pi^2}{g}\)</span>.</li>
+<li>Fit a linear regression to determine <span class="arithmatex">\(g\)</span> experimentally.</li>
 </ul>
+<p><img alt="T Squared vs L" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Simple_pendulum_period_length_graph.svg/640px-Simple_pendulum_period_length_graph.svg.png"/></p>
 <hr/>
 <h2 id="deliverables-summary">📁 Deliverables Summary</h2>
-<ul>
-<li>📋 Tabulated time measurements.</li>
-<li>🔢 Calculations for mean, standard deviation, and period.</li>
-<li>🧠 Final gravity estimate with uncertainty.</li>
-<li>🗣 Discussion of experimental limitations and uncertainty propagation.</li>
-</ul>
+<p>✅ Table of oscillation times
+✅ Calculated mean, standard deviation, and period
+✅ Final gravity value with uncertainty
+✅ Discussion of errors and result interpretation
+✅ Python plots and optional data visualization
+✅ Recommendations for improving measurement reliability</p>
 <hr/>
-<h2 id="references">📚 References</h2>
+<h2 id="references-resources">📚 References &amp; Resources</h2>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Pendulum_(mathematics)">Simple Pendulum - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pendulum_%28mathematics%29">Simple Pendulum - Wikipedia</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Propagation_of_uncertainty">Uncertainty Propagation - Wikipedia</a></li>
+<li><a href="https://www.omnicalculator.com/physics/pendulum">Pendulum Calculator</a></li>
+<li><a href="https://www.youtube.com/watch?v=6AGD0_-B3MI">YouTube - How to Measure g with a Pendulum</a></li>
 </ul>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
-<a class="btn btn-neutral float-left" href="../../6%20Statistics/Problem_2/" title="Problem 2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-left" href="../../6%20Statistics/Problem_2/" title="Problem 2: Estimating π Using Monte Carlo Methods"><span class="icon icon-circle-arrow-left"></span> Previous</a>
 <a class="btn btn-neutral float-right" href="../../../2Mathematics/1%20Linear_algebra/" title="Linear Algebra">Next <span class="icon icon-circle-arrow-right"></span></a>
 </div>
 <hr/>
