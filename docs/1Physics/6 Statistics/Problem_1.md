@@ -128,10 +128,6 @@ This explains why the sampling distribution gets narrower with larger samples.
 
 ![Exponential CLT](https://bioramble.wordpress.com/wp-content/uploads/2015/10/clt_part2_exp.png)
 
-### 📙 Binomial Distribution
-
-![Binomial CLT](https://i.sstatic.net/W3eiR.png)
-
 Each image demonstrates how the sample mean distribution converges to a normal curve, even if the original distribution was not normal.
 
 ---
