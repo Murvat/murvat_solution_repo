@@ -24,6 +24,8 @@ This graph-based model is used in:
 
 ### 🔁 Two Key Simplifications
 
+![Resistor network](https://www.researchgate.net/publication/225263504/figure/fig5/AS:668205852925960@1536324098926/Graph-representation-of-a-realistic-resistor-network-The-squares-are-external-nodes-and.png)
+
 #### 1. **Series Reduction**
 
 Two resistors connected **end-to-end** between three nodes (A-B-C), where the middle node has only two connections (degree 2), can be replaced with a single resistor.

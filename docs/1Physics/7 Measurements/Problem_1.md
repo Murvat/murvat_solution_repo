@@ -8,9 +8,7 @@ The acceleration due to gravity $g$ is a foundational physical constant central 
 
 This experiment demonstrates how basic tools and data analysis can be used to produce an accurate estimate of $g$, while introducing essential scientific skills: measurement precision, data handling, and uncertainty quantification.
 
-![Pendulum Experiment](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Pendulum_animation.gif/480px-Pendulum_animation.gif)
-
----
+![Galileos Experiment](https://galileoandeinstein.phys.virginia.edu/lectures/gal_accn96_files/image001.jpg)
 
 ## 🔧 Materials Required
 
@@ -32,8 +30,6 @@ This experiment demonstrates how basic tools and data analysis can be used to pr
 2. **Length Measurement**: Measure the length $L$ from the suspension point to the mass center. Use a ruler with millimeter resolution if possible.
 3. **Displacement**: Gently pull the pendulum back by **less than 15°** from the vertical to maintain the small-angle approximation.
 4. **Measurement Uncertainty**: If using a ruler with 1 cm divisions, uncertainty in $L$ is $u_L = 0.005$ m.
-
-![Simple Pendulum Setup](https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Pendulum.svg/800px-Pendulum.svg.png)
 
 ---
 
@@ -57,6 +53,8 @@ Conduct **10 trials**, each measuring the time for **10 full oscillations**. Rec
 ---
 
 ## 🔎 Calculated Averages and Uncertainties
+
+![Example](https://www.physicslab.org/img/19c0ac3f-607f-42fc-a370-cf033b9e9471.gif)
 
 ### 🧮 Period Calculation
 
@@ -131,6 +129,8 @@ $$
 
 ## 📈 Visualization Examples
 
+![Example](https://media.geeksforgeeks.org/wp-content/uploads/20221202100610/GravitationalForce.png)
+
 ### 📍 Time vs. Trial Plot
 
 ```python
@@ -158,8 +158,6 @@ plt.show()
 - Try different lengths $L$ and observe how $T$ changes.
 - Plot $T^2$ vs $L$; the slope will be $\frac{4\pi^2}{g}$.
 - Fit a linear regression to determine $g$ experimentally.
-
-![T Squared vs L](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Simple_pendulum_period_length_graph.svg/640px-Simple_pendulum_period_length_graph.svg.png)
 
 ---
 

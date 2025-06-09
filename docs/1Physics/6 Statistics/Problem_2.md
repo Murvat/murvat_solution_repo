@@ -136,7 +136,7 @@ plot_buffon_simulation(x_c, a_c, cross)
 
 ## 🎯 Visual Example
 
-![Buffon's Needle Simulation](https://upload.wikimedia.org/wikipedia/commons/8/86/Buffon%27s_needle_simulation.png)
+![Buffon's Needle Simulation](https://mste.illinois.edu/activity/buffon/situation.png)
 
 ## 4️⃣ Convergence Analysis
 
@@ -173,16 +173,6 @@ plot_buffon_simulation(x_c, a_c, cross)
 - [Visual Pi Estimation Animation](https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Pi_30K.gif/800px-Pi_30K.gif)
 
 ---
-
-# 🖼️ Additional Visualizations
-
-### Circle Method Convergence
-
-![Convergence Plot](https://upload.wikimedia.org/wikipedia/commons/f/fb/Pi_approximation_Monte_Carlo_20000.gif)
-
-### Buffon's Needle Geometry
-
-![Needle Geometry](https://upload.wikimedia.org/wikipedia/commons/8/87/Buffon%27s_needle.svg)
 
 ---
 

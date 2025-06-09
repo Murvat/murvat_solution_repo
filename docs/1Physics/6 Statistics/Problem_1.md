@@ -122,15 +122,15 @@ This explains why the sampling distribution gets narrower with larger samples.
 
 ### 📘 Uniform Distribution
 
-![Uniform CLT](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/CLT_uniform.png/800px-CLT_uniform.png)
+![Uniform CLT](https://media.geeksforgeeks.org/wp-content/uploads/20240910185138/gh.png)
 
 ### 📗 Exponential Distribution
 
-![Exponential CLT](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/CLT_exponential.png/800px-CLT_exponential.png)
+![Exponential CLT](https://bioramble.wordpress.com/wp-content/uploads/2015/10/clt_part2_exp.png)
 
 ### 📙 Binomial Distribution
 
-![Binomial CLT](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/CLT_binomial.png/800px-CLT_binomial.png)
+![Binomial CLT](https://i.sstatic.net/W3eiR.png)
 
 Each image demonstrates how the sample mean distribution converges to a normal curve, even if the original distribution was not normal.
 
